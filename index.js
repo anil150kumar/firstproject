@@ -23,13 +23,15 @@ let token = ""
 // Facebook 
 
 app.get('/webhook/', function(req, res) {
-	// if (req.query['hub.verify_token'] === "blondiebytes") {
-	// 	res.send(req.query['hub.challenge'])
-	// }
+ if (req.query['hub.verify_token'] === "blondiebytes") {
+	 	res.send(req.query['hub.challenge'])
+	 }
 	res.send("Wrong token")
 })
 
 app.post('/webhook/', function(req, res) {
+	//var postre req.body;
+	//console.log(postreq.entry);
 	let messaging_events = req.body.entry[0].messaging
 	for (let i = 0; i < messaging_events.length; i++) {
 		let event = messaging_events[i]
