@@ -1,0 +1,23 @@
+{
+  "name": "firstchatbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "anil150kumar"
+  },
+  "keywords": [
+    "ak@anil1"
+  ],
+  "author": "Anil",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "request": "^2.88.0"
+  }
+}
