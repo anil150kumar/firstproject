@@ -23,9 +23,9 @@ let token = ""
 // Facebook 
 
 app.get('/webhook/', function(req, res) {
-	if (req.query['hub.verify_token'] === "blondiebytes") {
-		res.send(req.query['hub.challenge'])
-	}
+	// if (req.query['hub.verify_token'] === "blondiebytes") {
+	// 	res.send(req.query['hub.challenge'])
+	// }
 	res.send("Wrong token")
 })
 
