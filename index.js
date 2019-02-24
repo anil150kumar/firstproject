@@ -18,7 +18,7 @@ app.get('/', function(req, res) {
 	res.send("Hi I am a chatbot")
 })
 
-let token = ""
+let token = "EAAgLsx7HL4wBADOQhM3dxqZCCesPQnslZCSilZAo2HzINMpZAWroTD3tHmdXHrSgCYnn967osUiEokZAs88svt3TMsRPlzs1TahsZCXyZCNmiY7cbNssArmiVLJMdQswitDZBambDujBrAZA7sOZCQRp7FECosxtE5WRsqWzr7eM6MxwZDZD"
 
 // Facebook 
 
@@ -50,7 +50,7 @@ function sendText(sender, text) {
 		url: "https://graph.facebook.com/v2.6/me/messages",
 		qs : {access_token: token},
 		method: "POST",
-		json: {
+	git 	json: {
 			recipient: {id: sender},
 			message : messageData,
 		}
